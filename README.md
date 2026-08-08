@@ -63,4 +63,6 @@ Run:
 python gui.py
 ## Screenshot
 
+The following screenshot shows the main interface of the AI Resume Screener application.
+
 ![AI Resume Screener GUI](gui_screenshot.png)
