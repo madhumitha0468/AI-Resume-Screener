@@ -63,4 +63,4 @@ Run:
 python gui.py
 ## 🖥️ Application Screenshot
 
-![AI Resume Screening System](gui_screenshot.png)
+![AI Resume Screening System](./gui_screenshot.png)
