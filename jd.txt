@@ -1,0 +1,33 @@
+JOB TITLE: Java Software Developer
+
+JOB DESCRIPTION
+
+We are looking for a Java Software Developer to design, develop, test and maintain software applications.
+
+REQUIRED SKILLS
+
+- Strong knowledge of Java programming
+- Object-Oriented Programming (OOP)
+- Good understanding of Data Structures and Algorithms (DSA)
+- Strong SQL and relational database knowledge
+- Experience with Git and GitHub
+- Problem-solving and algorithmic skills
+- Knowledge of software development practices
+
+RESPONSIBILITIES
+
+- Develop and maintain applications using Java.
+- Apply OOP concepts to create maintainable software.
+- Write and optimize SQL queries.
+- Use Git and GitHub for version control.
+- Implement efficient data structures and algorithms.
+- Debug and solve software problems.
+- Work with other developers to build reliable applications.
+
+EDUCATION
+
+Bachelor's degree in Computer Science, Information Technology, Artificial Intelligence and Data Science, or a related field.
+
+EXPERIENCE
+
+0–3 years of software development experience. Fresh graduates with strong programming skills may also apply.
