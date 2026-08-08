@@ -68,3 +68,9 @@ The following screenshot shows the main interface of the AI Resume Screener appl
 
 ![AI Resume Screener GUI](gui_screenshot.png)
 
+## 🎥 Demo Video
+
+The demo video demonstrates the complete functionality of the AI Resume Screener, including entering the Job Description, processing resumes, comparing the resume with the job requirements, and displaying the results.
+
+[Watch the Demo Video](YOUR_VIDEO_LINK)
+
