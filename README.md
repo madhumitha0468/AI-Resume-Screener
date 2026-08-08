@@ -61,3 +61,6 @@ Run:
 
 ```bash
 python gui.py
+## 🖥️ Application Screenshot
+
+![AI Resume Screening System](gui_screenshot.png)
