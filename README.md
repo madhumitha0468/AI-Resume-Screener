@@ -61,6 +61,6 @@ Run:
 
 ```bash
 python gui.py
-## 🖥️ Application Screenshot
+## Screenshot
 
-![AI Resume Screening System](./gui_screenshot.png)
+![AI Resume Screener GUI](gui_screenshot.png)
