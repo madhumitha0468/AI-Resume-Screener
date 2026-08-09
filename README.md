@@ -66,4 +66,4 @@ python gui.py
 
 The demo video demonstrates the complete functionality of the AI Resume Screener, including entering the Job Description, processing resumes, comparing the resume with the job requirements, and displaying the results.
 
-[Watch the Demo Video]([YOUR_VIDEO_LINK]([https://drive.google.com/file/d/1Sz4_1pc7tZWIiAX2_MoGsF8MpWvycV2L/view?usp=drive_link)](https://github.com/madhumitha0468/AI-Resume-Screener/issues/1#issue-5101303376))
+[Watch Demo](https://drive.google.com/file/d/1Sz4_1pc7tZWIiAX2_MoGsF8MpWvycV2L/view?usp=drive_link)
