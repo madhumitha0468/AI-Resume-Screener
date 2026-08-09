@@ -74,9 +74,43 @@ _KEEP_CHARS = r"a-z0-9\+\#\./\-"
 
 
 def read_text(path):
-    """Read a text file using only builtins."""
-    with open(path, "r", encoding="utf-8", errors="ignore") as f:
-        return f.read()
+    """Extract text from TXT, PDF, or DOCX files."""
+
+    extension = os.path.splitext(path)[1].lower()
+
+    # TXT
+    if extension == ".txt":
+        with open(path, "r", encoding="utf-8", errors="ignore") as f:
+            return f.read()
+
+    # PDF
+    elif extension == ".pdf":
+        from pypdf import PdfReader
+
+        reader = PdfReader(path)
+        text = []
+
+        for page in reader.pages:
+            page_text = page.extract_text()
+            if page_text:
+                text.append(page_text)
+
+        return "\n".join(text)
+
+    # DOCX
+    elif extension == ".docx":
+        from docx import Document
+
+        document = Document(path)
+        text = []
+
+        for paragraph in document.paragraphs:
+            text.append(paragraph.text)
+
+        return "\n".join(text)
+
+    else:
+        raise ValueError(f"Unsupported file format: {extension}")
 
 
 def clean_tokenize(text):
@@ -167,20 +201,21 @@ def keyword_coverage(resume_terms_set, keywords):
 
 
 def collect_resume_files(paths):
-    """Accept a mix of files and directories; return list of .txt file paths."""
+    """Accept a mix of files and directories; return list of resume files."""
+
     files = []
+
     for p in paths:
         if os.path.isdir(p):
             for name in sorted(os.listdir(p)):
-                if name.lower().endswith(".txt"):
+                if name.lower().endswith((".txt", ".pdf", ".docx")):
                     files.append(os.path.join(p, name))
+
         elif os.path.isfile(p):
-            files.append(p)
-        else:
-            print(f"Warning: '{p}' not found, skipping.", file=sys.stderr)
+            if p.lower().endswith((".txt", ".pdf", ".docx")):
+                files.append(p)
+
     return files
-
-
 def score_resumes(jd_path, resume_paths, top_n_keywords=15,
                    w_similarity=0.6, w_coverage=0.4):
     jd_text = read_text(jd_path)
