@@ -20,10 +20,7 @@ An intelligent resume screening system that compares candidate resumes with a jo
 
 - Python
 - Tkinter
-- TF-IDF
-- Cosine Similarity
-- CSV
-- Regular Expressions
+- Python Standard Library
 
 ## 📂 Project Structure
 
