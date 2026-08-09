@@ -59,11 +59,9 @@ Run:
 ```bash
 python gui.py
 ```markdown
-## 📸 Screenshot
+## 🖥️ Application Screenshot
 
-The following screenshot shows the main interface of the AI Resume Screener application.
-
-![AI Resume Screener GUI](gui_screenshot.png)
+![AI Resume Screening System](./gui_screenshot.png)
 
 ## 🎥 Demo Video
 
